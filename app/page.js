@@ -268,6 +268,7 @@ export default function HourlyWageConverter() {
                 </label>
                 <div className="grid grid-cols-3 gap-2 max-w-md">
                   {[
+                    { value: '0', label: '0%' },
                     { value: '0.02', label: '2%' },
                     { value: '0.04', label: '4%' },
                     { value: '0.06', label: '6%' },
