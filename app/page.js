@@ -69,7 +69,7 @@ export default function HourlyWageConverter() {
   const calculations = useMemo(() => {
     const rate = parseFloat(hourlyRate) || 0;
     const hours = parseFloat(hoursPerWeek) || 0;
-    const pension = parseFloat(pensionRate) || 0.02;
+    const pension = pensionRate !== '' ? parseFloat(pensionRate) : 0.02;
 
     // Working time calculation
     const workingDays = YEAR_DAYS - WEEKEND_DAYS - config.publicHolidays - config.vacationWorkingDays;
