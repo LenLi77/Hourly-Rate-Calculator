@@ -266,7 +266,7 @@ export default function HourlyWageConverter() {
                 <label className="block text-sm font-medium text-slate-700 mb-2">
                   Pension Pillar II Rate (Estonia only)
                 </label>
-                <div className="grid grid-cols-3 gap-2 max-w-md">
+                <div className="grid grid-cols-4 gap-2 max-w-md">
                   {[
                     { value: '0', label: '0%' },
                     { value: '0.02', label: '2%' },
